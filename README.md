@@ -1,10 +1,10 @@
-# Link Star - Developer Documentation
+# LinkStar - Developer Documentation
 
 A WordPress Gutenberg block plugin that provides a customizable link block with advanced styling options and hover effects.
 
 ## Overview
 
-Link Star adds a powerful link block to the WordPress block editor with extensive customization options including hover effects, icon support, and advanced styling controls. The block is perfect for creating call-to-action buttons, styled navigation elements, and interactive link components.
+LinkStar adds a powerful link block to the WordPress block editor with extensive customization options including hover effects, icon support, and advanced styling controls. The block is perfect for creating call-to-action buttons, styled navigation elements, and interactive link components.
 
 ## Requirements
 
