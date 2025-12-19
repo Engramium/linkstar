@@ -1,0 +1,111 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"title": "Link Star",
+	"name": "link-star/link-star",
+	"icon": "admin-links",
+	"description": "A link block that can be used to link to a page or a URL.",
+	"category": "widgets",
+	"attributes": {
+		"link": {
+			"type": "string"
+		},
+		"openInNewTab": {
+			"type": "boolean",
+			"default": false
+		},
+		"nofollow": {
+			"type": "boolean",
+			"default": false
+		},
+		"titleAttr": {
+			"type": "string"
+		},
+		"hoverEffect": {
+			"type": "object",
+			"default": {
+				"headingColor": "",
+				"paragraphColor": "",
+				"iconBgColor": "",
+				"iconFillColor": "",
+				"iconStrokeColor": "",
+				"bgColor": ""
+			}
+		}
+	},
+	"supports": {
+		"__experimentalOnEnter": true,
+		"__experimentalOnMerge": true,
+		"__experimentalSettings": true,
+		"align": ["wide", "full"],
+		"anchor": true,
+		"ariaLabel": true,
+		"html": false,
+		"background": {
+			"backgroundImage": true,
+			"backgroundSize": true,
+			"__experimentalDefaultControls": {
+				"backgroundImage": true
+			}
+		},
+		"color": {
+			"gradients": true,
+			"heading": true,
+			"button": true,
+			"link": true,
+			"__experimentalDefaultControls": {
+				"background": true,
+				"text": true
+			}
+		},
+		"shadow": true,
+		"spacing": {
+			"margin": ["top", "bottom"],
+			"padding": true,
+			"blockGap": true,
+			"__experimentalDefaultControls": {
+				"padding": true,
+				"blockGap": true
+			}
+		},
+		"dimensions": {
+			"minHeight": true
+		},
+		"__experimentalBorder": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true,
+			"__experimentalDefaultControls": {
+				"color": true,
+				"radius": true,
+				"style": true,
+				"width": true
+			}
+		},
+		"position": {
+			"sticky": true
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"__experimentalFontFamily": true,
+			"__experimentalFontWeight": true,
+			"__experimentalFontStyle": true,
+			"__experimentalTextTransform": true,
+			"__experimentalTextDecoration": true,
+			"__experimentalLetterSpacing": true,
+			"__experimentalDefaultControls": {
+				"fontSize": true
+			}
+		},
+		"layout": {
+			"allowSizingOnChildren": true
+		},
+		"interactivity": {
+			"clientNavigation": true
+		}
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css"
+}
