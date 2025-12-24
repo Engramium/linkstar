@@ -2,8 +2,8 @@
 // This file is generated. Do not modify it manually.
 return array(
 	'linkstar' => array(
-		'$schema' => 'https://json.schemastore.org/block.json',
-		'apiVersion' => 2,
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
 		'title' => 'Link Star',
 		'name' => 'link-star/link-star',
 		'icon' => 'admin-links',
