@@ -3,94 +3,114 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: LinkStar 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/link-star\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/linkstar\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-09-19T13:34:38+00:00\n"
+"POT-Creation-Date: 2025-12-27T10:26:18+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
-"X-Domain: link-star\n"
+"X-Domain: linkstar\n"
 
 #. Plugin Name of the plugin
-#: link-star.php
+#: linkstar.php
 msgid "LinkStar"
 msgstr ""
 
 #. Description of the plugin
-#: link-star.php
+#: linkstar.php
 msgid "A link block that can be used to link to a page or a URL."
 msgstr ""
 
 #. Author of the plugin
-#: link-star.php
+#: linkstar.php
 msgid "Engramium"
 msgstr ""
 
+#. Author URI of the plugin
+#: linkstar.php
+msgid "https://www.engramium.com/"
+msgstr ""
+
 #: build/linkstar/index.js:1
-#: src/linkstar/Inspector.js:51
+#: src/linkstar/Inspector.js:52
+msgid "Settings"
+msgstr ""
+
+#: build/linkstar/index.js:1
+#: src/linkstar/Inspector.js:54
+msgid "Area Label"
+msgstr ""
+
+#: build/linkstar/index.js:1
+#: src/linkstar/Inspector.js:55
+msgid "Accessible label for screen readers."
+msgstr ""
+
+#: build/linkstar/index.js:1
+#: src/linkstar/Inspector.js:70
 msgid "Hover Color"
 msgstr ""
 
 #: build/linkstar/index.js:1
-#: src/linkstar/Inspector.js:61
-#: src/linkstar/Inspector.js:90
+#: src/linkstar/Inspector.js:80
+#: src/linkstar/Inspector.js:109
 msgid "Heading"
 msgstr ""
 
 #: build/linkstar/index.js:1
-#: src/linkstar/Inspector.js:122
-#: src/linkstar/Inspector.js:151
+#: src/linkstar/Inspector.js:141
+#: src/linkstar/Inspector.js:170
 msgid "Paragraph"
 msgstr ""
 
 #: build/linkstar/index.js:1
-#: src/linkstar/Inspector.js:183
-#: src/linkstar/Inspector.js:212
-#: src/linkstar/Inspector.js:288
+#: src/linkstar/Inspector.js:202
+#: src/linkstar/Inspector.js:231
+#: src/linkstar/Inspector.js:307
 msgid "Background"
 msgstr ""
 
 #: build/linkstar/index.js:1
-#: src/linkstar/Inspector.js:244
-#: src/linkstar/Inspector.js:276
+#: src/linkstar/Inspector.js:263
+#: src/linkstar/Inspector.js:295
 msgid "Icon"
 msgstr ""
 
 #: build/linkstar/index.js:1
-#: src/linkstar/Inspector.js:319
+#: src/linkstar/Inspector.js:338
 msgid "Fill"
 msgstr ""
 
 #: build/linkstar/index.js:1
-#: src/linkstar/Inspector.js:352
+#: src/linkstar/Inspector.js:371
 msgid "Stroke"
 msgstr ""
 
 #: build/linkstar/index.js:1
-#: src/linkstar/edit.js:49
+#: src/linkstar/edit.js:53
 msgid "Link"
 msgstr ""
 
 #: build/linkstar/index.js:1
-#: src/linkstar/edit.js:57
+#: src/linkstar/edit.js:61
 msgid "Edit Link"
 msgstr ""
 
 #: build/linkstar/index.js:1
-#: src/linkstar/edit.js:63
+#: src/linkstar/edit.js:67
 msgid "Unlink"
 msgstr ""
 
 #: build/linkstar/index.js:1
-#: src/linkstar/edit.js:113
+#: src/linkstar/edit.js:117
 msgid "Open in new tab"
 msgstr ""
 
 #: build/linkstar/index.js:1
-#: src/linkstar/edit.js:117
+#: src/linkstar/edit.js:121
 msgid "Mark as nofollow"
 msgstr ""
 

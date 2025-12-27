@@ -8,7 +8,7 @@ Requires PHP:      7.4
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
-sldkjfklsj klsjdkl jsdklfjsk jskldj klsdjfklsdjfklsdj ksdjk ljsdklfjsdlk
+Lightweight Gutenberg block for stylish, customizable links and call-to-action buttons, with hover effects and Full Site Editing support.
 
 == Description ==
 
