@@ -13,8 +13,11 @@ import { __ } from '@wordpress/i18n';
 import Inspector from './Inspector';
 import { getCssAttributes, handleDynamicClasses } from './utils';
 
+const TEMPLATE = [['core/paragraph', { placeholder: 'Add your content…' }]];
+
 export default function Edit({ attributes, setAttributes }) {
-	const { link, openInNewTab, titleAttr, hoverEffect, nofollow } = attributes;
+	const { link, openInNewTab, titleAttr, ariaLabel, hoverEffect, nofollow } =
+		attributes;
 	const [isLinkControlVisible, setIsLinkControlVisible] = useState(false);
 
 	const blockProps = useBlockProps({
@@ -33,6 +36,7 @@ export default function Edit({ attributes, setAttributes }) {
 				rel={nofollow ? 'noreferrer nofollow' : undefined}
 				title={titleAttr ? titleAttr : undefined}
 				onClick={isEditing ? (e) => e.preventDefault() : undefined}
+				aria-label={ariaLabel}
 			>
 				<InnerBlocks />
 			</a>
@@ -46,7 +50,7 @@ export default function Edit({ attributes, setAttributes }) {
 					{!link && (
 						<ToolbarButton
 							icon={linkIcon}
-							title={__('Link', 'link-star')}
+							title={__('Link', 'linkstar')}
 							onClick={() => setIsLinkControlVisible(true)}
 						/>
 					)}
@@ -54,13 +58,13 @@ export default function Edit({ attributes, setAttributes }) {
 						<>
 							<ToolbarButton
 								icon={linkIcon}
-								title={__('Edit Link', 'link-star')}
+								title={__('Edit Link', 'linkstar')}
 								onClick={() => setIsLinkControlVisible(true)}
 								isActive={isLinkControlVisible}
 							/>
 							<ToolbarButton
 								icon={linkOff}
-								title={__('Unlink', 'link-star')}
+								title={__('Unlink', 'linkstar')}
 								onClick={() => {
 									setAttributes({
 										link: '',
@@ -110,11 +114,11 @@ export default function Edit({ attributes, setAttributes }) {
 							settings={[
 								{
 									id: 'opensInNewTab',
-									title: __('Open in new tab', 'link-star'),
+									title: __('Open in new tab', 'linkstar'),
 								},
 								{
 									id: 'nofollow',
-									title: __('Mark as nofollow', 'link-star'),
+									title: __('Mark as nofollow', 'linkstar'),
 									value: nofollow,
 									onChange: () => {
 										setAttributes({
@@ -132,7 +136,7 @@ export default function Edit({ attributes, setAttributes }) {
 				renderAnchorTag()
 			) : (
 				<div {...blockProps}>
-					<InnerBlocks />
+					<InnerBlocks template={TEMPLATE} />
 				</div>
 			)}
 		</>

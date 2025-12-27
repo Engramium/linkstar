@@ -2,7 +2,7 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Link Star 1.0.0\n"
+"Project-Id-Version: LinkStar 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/link-star\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: link-star.php
-msgid "Link Star"
+msgid "LinkStar"
 msgstr ""
 
 #. Description of the plugin
@@ -97,7 +97,7 @@ msgstr ""
 #: build/linkstar/block.json
 #: src/linkstar/block.json
 msgctxt "block title"
-msgid "Link Star"
+msgid "LinkStar"
 msgstr ""
 
 #: build/linkstar/block.json

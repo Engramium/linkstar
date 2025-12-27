@@ -133,13 +133,13 @@ In JavaScript:
 ```javascript
 import { __ } from '@wordpress/i18n';
 
-const label = __('Link URL', 'link-star');
+const label = __('Link URL', 'linkstar');
 ```
 
 In PHP:
 
 ```php
-__( 'Link Star', 'link-star' );
+__( 'LinkStar', 'linkstar' );
 ```
 
 ### Generating Translation Files

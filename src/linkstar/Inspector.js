@@ -7,6 +7,8 @@ import {
 	Dropdown,
 	__experimentalDropdownContentWrapper as DropdownContentWrapper,
 	__experimentalHStack as HStack,
+	PanelBody,
+	TextControl,
 	TabPanel,
 	__experimentalText as Text,
 	__experimentalToolsPanel as ToolsPanel,
@@ -16,7 +18,7 @@ import { useSelect } from '@wordpress/data';
 import { __ } from '@wordpress/i18n';
 
 const Inspector = ({ attributes, setAttributes }) => {
-	const { hoverEffect } = attributes;
+	const { hoverEffect, ariaLabel } = attributes;
 	const {
 		headingColor,
 		paragraphColor,
@@ -46,9 +48,26 @@ const Inspector = ({ attributes, setAttributes }) => {
 
 	return (
 		<>
+			<InspectorControls>
+				<PanelBody title={__('Settings', 'linkstar')}>
+					<TextControl
+						label={__('Area Label', 'linkstar')}
+						help={__(
+							'Accessible label for screen readers.',
+							'linkstar'
+						)}
+						value={ariaLabel}
+						onChange={(newValue) =>
+							setAttributes({
+								ariaLabel: newValue,
+							})
+						}
+					/>
+				</PanelBody>
+			</InspectorControls>
 			<InspectorControls group="styles">
 				<ToolsPanel
-					label={__('Hover Color', 'link-star')}
+					label={__('Hover Color', 'linkstar')}
 					resetAll={resetAll}
 					hasInnerWrapper
 					__experimentalFirstVisibleItemClass="first"
@@ -58,7 +77,7 @@ const Inspector = ({ attributes, setAttributes }) => {
 						<ToolsPanelItem
 							isShownByDefault
 							hasValue={() => !!headingColor}
-							label={__('Heading', 'link-star')}
+							label={__('Heading', 'linkstar')}
 							onDeselect={() =>
 								setAttributes({
 									hoverEffect: {
@@ -87,7 +106,7 @@ const Inspector = ({ attributes, setAttributes }) => {
 												colorValue={headingColor}
 											/>
 											<Text>
-												{__('Heading', 'link-star')}
+												{__('Heading', 'linkstar')}
 											</Text>
 										</HStack>
 									</Button>
@@ -119,7 +138,7 @@ const Inspector = ({ attributes, setAttributes }) => {
 						<ToolsPanelItem
 							isShownByDefault
 							hasValue={() => !!paragraphColor}
-							label={__('Paragraph', 'link-star')}
+							label={__('Paragraph', 'linkstar')}
 							onDeselect={() =>
 								setAttributes({
 									hoverEffect: {
@@ -148,7 +167,7 @@ const Inspector = ({ attributes, setAttributes }) => {
 												colorValue={paragraphColor}
 											/>
 											<Text>
-												{__('Paragraph', 'link-star')}
+												{__('Paragraph', 'linkstar')}
 											</Text>
 										</HStack>
 									</Button>
@@ -180,7 +199,7 @@ const Inspector = ({ attributes, setAttributes }) => {
 						<ToolsPanelItem
 							isShownByDefault
 							hasValue={() => !!bgColor}
-							label={__('Background', 'link-star')}
+							label={__('Background', 'linkstar')}
 							onDeselect={() =>
 								setAttributes({
 									hoverEffect: {
@@ -209,7 +228,7 @@ const Inspector = ({ attributes, setAttributes }) => {
 												colorValue={bgColor}
 											/>
 											<Text>
-												{__('Background', 'link-star')}
+												{__('Background', 'linkstar')}
 											</Text>
 										</HStack>
 									</Button>
@@ -241,7 +260,7 @@ const Inspector = ({ attributes, setAttributes }) => {
 						<ToolsPanelItem
 							isShownByDefault
 							hasValue={() => !!iconFillColor}
-							label={__('Icon', 'link-star')}
+							label={__('Icon', 'linkstar')}
 							onDeselect={() =>
 								setAttributes({
 									hoverEffect: {
@@ -273,7 +292,7 @@ const Inspector = ({ attributes, setAttributes }) => {
 												colorValue={iconFillColor}
 											/>
 											<Text>
-												{__('Icon', 'link-star')}
+												{__('Icon', 'linkstar')}
 											</Text>
 										</HStack>
 									</Button>
@@ -287,7 +306,7 @@ const Inspector = ({ attributes, setAttributes }) => {
 													name: 'background',
 													title: __(
 														'Background',
-														'link-star'
+														'linkstar'
 													),
 													content: (
 														<ColorPalette
@@ -318,7 +337,7 @@ const Inspector = ({ attributes, setAttributes }) => {
 													name: 'fill',
 													title: __(
 														'Fill',
-														'link-star'
+														'linkstar'
 													),
 													content: (
 														<ColorPalette
@@ -351,7 +370,7 @@ const Inspector = ({ attributes, setAttributes }) => {
 													name: 'stroke',
 													title: __(
 														'Stroke',
-														'link-star'
+														'linkstar'
 													),
 													content: (
 														<ColorPalette

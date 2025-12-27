@@ -1,7 +1,7 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"title": "Link Star",
+	"title": "LinkStar",
 	"name": "link-star/link-star",
 	"icon": "admin-links",
 	"description": "A link block that can be used to link to a page or a URL.",
@@ -19,6 +19,9 @@
 			"default": false
 		},
 		"titleAttr": {
+			"type": "string"
+		},
+		"ariaLabel": {
 			"type": "string"
 		},
 		"hoverEffect": {

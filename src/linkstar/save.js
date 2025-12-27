@@ -3,7 +3,8 @@ import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
 import { getCssAttributes, handleDynamicClasses } from './utils';
 
 export default function Save({ attributes }) {
-	const { link, nofollow, openInNewTab, titleAttr, hoverEffect } = attributes;
+	const { link, nofollow, openInNewTab, titleAttr, ariaLabel, hoverEffect } =
+		attributes;
 
 	const getRelAttribute = () => {
 		const relValues = [];
@@ -29,6 +30,7 @@ export default function Save({ attributes }) {
 			rel={getRelAttribute()}
 			target={openInNewTab ? '_blank' : undefined}
 			title={titleAttr}
+			aria-label={ariaLabel}
 		>
 			<InnerBlocks.Content />
 		</a>

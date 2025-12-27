@@ -4,7 +4,7 @@ return array(
 	'linkstar' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
-		'title' => 'Link Star',
+		'title' => 'LinkStar',
 		'name' => 'link-star/link-star',
 		'icon' => 'admin-links',
 		'description' => 'A link block that can be used to link to a page or a URL.',
@@ -22,6 +22,9 @@ return array(
 				'default' => false
 			),
 			'titleAttr' => array(
+				'type' => 'string'
+			),
+			'ariaLabel' => array(
 				'type' => 'string'
 			),
 			'hoverEffect' => array(
